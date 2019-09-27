@@ -1,0 +1,11 @@
+{
+  "name": "readingwaters.com",
+  "version": "0.1.0",
+  "description": "Personal website running on Next.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Keith Waters",
+  "license": "ISC"
+}
