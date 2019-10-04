@@ -1,14 +1,15 @@
 import { Component } from 'react';
+import { Container, Typography } from '@material-ui/core';
 
 class Index extends Component {
 
   render() {
     return (
-      <div>
-        <p>
-          Hello Next.js
-        </p>
-      </div>
+      <Container>
+        <Typography>
+          Hello Keith
+        </Typography>
+      </Container>
     )
   }
 };
