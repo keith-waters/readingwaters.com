@@ -8,14 +8,14 @@ class Layout extends Component {
     return (
       <>
         <AppBar position='static' style={{marginBottom:"10px", padding:"5px 0"}}>
-          <Container>
+          <Container maxWidth="md">
             <Typography variant="h4" component="h1">
               Reading Waters
             </Typography>
           </Container>
         </AppBar>
 
-        <Container>
+        <Container maxWidth="md">
           {this.props.children}
         </Container>
       </>
