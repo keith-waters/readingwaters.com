@@ -5,11 +5,9 @@ class Index extends Component {
 
   render() {
     return (
-      <Container>
-        <Typography>
-          Hello Keith
-        </Typography>
-      </Container>
+      <Typography>
+        Hello Keith
+      </Typography>
     )
   }
 };
