@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { Box, Card, CardMedia, Typography } from '@material-ui/core';
-import { textAlign } from '@material-ui/system';
 
 class Index extends Component {
 
