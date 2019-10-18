@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Link from 'next/link'
+import Router from 'next/router'
 
-import { Container, AppBar, Typography } from '@material-ui/core';
+import { Container, AppBar, Typography, Button } from '@material-ui/core';
 
 class Layout extends Component {
 
@@ -8,10 +10,15 @@ class Layout extends Component {
     return (
       <>
         <AppBar position='static' style={{marginBottom:"10px", padding:"5px 0"}}>
-          <Container maxWidth="md">
-            <Typography variant="h4" component="h1">
+          <Container maxWidth="md" style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
+            <Typography variant="h4" component="h1" style={{cursor: "pointer", flexGrow: "1"}} onClick={()=> {Router.push('/')}}>
               Reading Waters
             </Typography>
+            <Link href="/articles">
+              <Button style={{color: "white"}}>
+                Articles
+              </Button>
+            </Link>
           </Container>
         </AppBar>
 
