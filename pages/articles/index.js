@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import remark from 'remark'
 import frontmatter from 'remark-frontmatter'
+import yaml from 'js-yaml'
 import remark2rehype from 'remark-rehype'
 import rehype2react from 'rehype-react'
-import yaml from 'js-yaml'
 
 class Articles extends Component {
   static async getInitialProps({query}){
