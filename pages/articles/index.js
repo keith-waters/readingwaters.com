@@ -1,32 +1,24 @@
 import React, { Component } from 'react';
-import remark from 'remark'
-import frontmatter from 'remark-frontmatter'
-import yaml from 'js-yaml'
-import remark2rehype from 'remark-rehype'
-import rehype2react from 'rehype-react'
+import Link from 'next/link'
 
 class Articles extends Component {
   static async getInitialProps({query}){
-    return { data: query.data }
+    console.log(query)
+    return { list: query.data || [] }
   }
 
   render() {
-    const { data } = this.props;
-    const logger = () => log => {
-      const stuff = log.children[0].value;
-      const thing = yaml.load(stuff)
-      console.log(thing)
-    }
+    const { list } = this.props;
+    console.log('listo', list)
     return (
       <>
         <p>Articles</p>
         {
-          remark()
-            .use(frontmatter, ['yaml'])
-            .use(logger)
-            .use(remark2rehype)
-            .use(rehype2react, {createElement: React.createElement})
-            .processSync(data).contents
+          list.map(item => {
+            return (
+              <Link href={`/articles/${item.slug}`} key={Math.random()}><a>{item.title}</a></Link>
+            )
+          })
         }
       </>
     )
