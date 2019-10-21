@@ -7,15 +7,14 @@ import rehype2react from 'rehype-react'
 
 class Articles extends Component {
   static async getInitialProps({query}){
-    return { data: query.data }
+    return { content: query.content }
   }
 
   render() {
-    const { data } = this.props;
+    const { content } = this.props;
     const logger = () => log => {
       const stuff = log.children[0].value;
       const thing = yaml.load(stuff)
-      console.log(thing)
     }
     return (
       <>
@@ -25,7 +24,7 @@ class Articles extends Component {
             .use(logger)
             .use(remark2rehype)
             .use(rehype2react, {createElement: React.createElement})
-            .processSync(data).contents
+            .processSync(content).contents
         }
       </>
     )
