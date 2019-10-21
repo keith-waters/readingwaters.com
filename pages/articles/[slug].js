@@ -5,30 +5,32 @@ import yaml from 'js-yaml'
 import remark2rehype from 'remark-rehype'
 import rehype2react from 'rehype-react'
 
-class Articles extends Component {
+class Slug extends Component {
   static async getInitialProps({query}){
-    return { content: query.content }
-  }
+    let metadata = {};
+    const getMetadata = () => data => {
+      const stuff = data.children[0].value;
+      metadata = yaml.load(stuff)
+    };
+    const content = remark()
+        .use(frontmatter, ['yaml'])
+        .use(getMetadata)
+        .use(remark2rehype)
+        .use(rehype2react, {createElement: React.createElement})
+        .processSync(query.content).contents
+    return { content, metadata }
+  };
 
   render() {
-    const { content } = this.props;
-    const logger = () => log => {
-      const stuff = log.children[0].value;
-      const thing = yaml.load(stuff)
-    }
+    const { content, metadata } = this.props;
     return (
       <>
-        {
-          remark()
-            .use(frontmatter, ['yaml'])
-            .use(logger)
-            .use(remark2rehype)
-            .use(rehype2react, {createElement: React.createElement})
-            .processSync(content).contents
-        }
+        <h2>{metadata.title || 'wrong'}</h2>
+        <p>{metadata.publishDate || 'nope'}</p>
+        {content}
       </>
     )
   }
 };
 
-export default Articles;
+export default Slug;
