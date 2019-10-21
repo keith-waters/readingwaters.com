@@ -11,14 +11,14 @@ class Layout extends Component {
       <>
         <AppBar position='static' style={{marginBottom:"10px", padding:"5px 0"}}>
           <Container maxWidth="md" style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
-            <Typography variant="h4" component="h1" style={{cursor: "pointer", flexGrow: "1"}} onClick={()=> {Router.push('/')}}>
+            <Typography variant="h4" component="a" style={{cursor: "pointer", flexGrow: "1"}} href="/">
               Reading Waters
             </Typography>
-            <Link href="/articles">
+            <a href="/articles">
               <Button style={{color: "white"}}>
                 Articles
               </Button>
-            </Link>
+            </a>
           </Container>
         </AppBar>
 

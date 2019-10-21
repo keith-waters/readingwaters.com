@@ -1,7 +1,8 @@
 ---
 title: "test"
-date: "2019-10-18"
+publishDate: "2019-10-18"
 slug: "test"
+tags: ["test", "another test" ]
 ---
 
 # about

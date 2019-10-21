@@ -15,7 +15,7 @@ files.forEach(file => {
   const logger = () => log => {
     const stuff = log.children[0].value;
     const thing = yaml.load(stuff)
-    routes[`/articles/${thing.slug}`] = { page: '/articles/[slug].js', query: {data}}
+    routes[`/articles/${thing.slug}`] = { page: '/articles/[slug]', query: {data}}
     articlesList.push(thing)
   };
 

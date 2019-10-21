@@ -19,7 +19,6 @@ class Articles extends Component {
     }
     return (
       <>
-        <p>Articles</p>
         {
           remark()
             .use(frontmatter, ['yaml'])
