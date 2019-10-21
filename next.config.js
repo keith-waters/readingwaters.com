@@ -17,7 +17,7 @@ files.forEach(file => {
     // YAML child. A better way is to find the items in the children array 
     // that have a "type" of "yaml".
     const metadata = yaml.load(data.children[0].value);
-    articlesPathMap[`/articles/${metadata.slug}`] = { page: '/articles/[slug]', query: {content}};
+    articlesPathMap[`/articles/${metadata.slug}`] = { page: '/articles/[slug]', query: {content, metadata}};
     articlesList.push(metadata);
   };
 
@@ -29,11 +29,11 @@ files.forEach(file => {
 
 module.exports = withMDX({
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-  exportPathMap: async () => {
-    return {
-      '/': { page: '/' },
-      '/articles': { page: '/articles', query: {data: articlesList} },
-      ...articlesPathMap,
-    }
-  },
+  // exportPathMap: async () => {
+  //   return {
+  //     '/': { page: '/' },
+  //     '/articles': { page: '/articles', query: {data: articlesList} },
+  //     ...articlesPathMap,
+  //   }
+  // },
 });

@@ -14,7 +14,7 @@ class Articles extends Component {
         {
           list.map(item => {
             return (
-              <Link href={`/articles/${item.slug}`} key={Math.random()}><a>{item.title}</a></Link>
+              <a href={`/articles/${item.slug}`} key={Math.random()}>{item.title}</a>
             )
           })
         }
