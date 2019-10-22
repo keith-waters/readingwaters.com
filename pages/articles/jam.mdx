@@ -1,7 +1,13 @@
-export const publishDate = '2019-10-20';
+import Metadata from '../../src/Metadata';
+export const metadata = {
+  title: 'Basics of HTML',
+  publishDate: '2019-10-20',
+  logoSrc: '/HTML5_Logo.svg',
+  logoAlt: 'HTML5',
+  tags: ['test', 'beginner'],
+}
 
-<h1>jam</h1>
-<p>{publishDate}</p>
+<Metadata metadata={metadata} />
 
 # stuff
 
