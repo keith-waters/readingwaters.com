@@ -4,8 +4,8 @@ import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-import theme from '../src/theme';
-import Layout from '../src/Layout';
+import theme from '../theme';
+import Layout from '../Layout';
 
 class MyApp extends App {
   componentDidMount() {
