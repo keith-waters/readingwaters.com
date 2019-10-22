@@ -6,7 +6,7 @@ class Articles extends Component {
     return (
       <>
         <p>Articles</p>
-        <a href={'/articles/jam'} key={Math.random()}>amoino</a>
+        <Link href={'/articles/jam'} key={Math.random()}><a>Basics of HTML</a></Link>
       </>
     )
   }
