@@ -9,6 +9,9 @@ class Layout extends Component {
         <div style={{position:"static", backgroundColor: "purple", marginBottom:"10px", padding:"5px 0"}}>
           <div style={{padding:"0 10px", margin: "auto", maxWidth: "800px", display: "flex", flexDirection: "row", alignItems: "center"}}>
             <Link href="/">
+              <img src="/favicon.ico" alt="ReadingWaters Book" style={{marginRight: "10px", cursor: "pointer"}}/>
+            </Link>
+            <Link href="/">
               <a style={{flexGrow: "1", color: "white", textDecoration: "none", fontSize: "1.5em"}}>ReadingWaters</a>
             </Link>
             <Link href="/articles">
