@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import css from './metadata.css';
 
 const Metadata = ({metadata}) => {
   const {title, logoSrc, logoAlt, publishDate, tags} = metadata;
@@ -7,7 +8,7 @@ const Metadata = ({metadata}) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <div style={{display: "flex"}}>
+      <div className={css.flex}>
         <img src={logoSrc} alt={logoAlt} height="100px" width="100px" style={{marginRight: "10px"}} />
         <div style={{display: "flex", flexDirection: "column"}}>
           <h1 style={{margin: "0 0 0 0"}}>{title}</h1>
