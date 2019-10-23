@@ -1,7 +1,7 @@
 import App from 'next/app';
 import Head from 'next/head';
 import Layout from '../Layout';
-import '../style.css';
+import '../normalize.css';
 
 class MyApp extends App {
   render() {
