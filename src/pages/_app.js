@@ -1,6 +1,6 @@
 import App from 'next/app';
 import Head from 'next/head';
-import Layout from '../Layout';
+import Layout from '../components/Layout';
 import '../styles/normalize.css';
 import '../styles/style.css';
 
