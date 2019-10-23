@@ -1,30 +1,25 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
-import Router from 'next/router'
-
-import { Container, AppBar, Typography, Button } from '@material-ui/core';
 
 class Layout extends Component {
 
   render() {
     return (
       <>
-        <AppBar position='static' style={{marginBottom:"10px", padding:"5px 0"}}>
-          <Container maxWidth="md" style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
-            <Typography variant="h4" component="a" style={{cursor: "pointer", flexGrow: "1", color: "white", textDecoration: "none"}} href="/">
-              ReadingWaters
-            </Typography>
-            <a href="/articles">
-              <Button style={{color: "white"}}>
-                Articles
-              </Button>
-            </a>
-          </Container>
-        </AppBar>
+        <div style={{position:"static", backgroundColor: "purple", marginBottom:"10px", padding:"5px 0"}}>
+          <div style={{padding:"0 10px", margin: "auto", maxWidth: "800px", display: "flex", flexDirection: "row", alignItems: "center"}}>
+            <Link href="/">
+              <a style={{flexGrow: "1", color: "white", textDecoration: "none", fontSize: "1.5em"}}>ReadingWaters</a>
+            </Link>
+            <Link href="/articles">
+              <a style={{color: "white", textDecoration: "none"}}>Articles</a>
+            </Link>
+          </div>
+        </div>
 
-        <Container maxWidth="md">
+        <div style={{padding:"0 10px", margin: "auto", maxWidth: "800px"}}>
           {this.props.children}
-        </Container>
+        </div>
       </>
     );
   }
