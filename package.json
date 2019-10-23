@@ -13,8 +13,6 @@
   "author": "Keith Waters",
   "license": "ISC",
   "dependencies": {
-    "@material-ui/core": "^4.5.0",
-    "@material-ui/styles": "^4.5.0",
     "@mdx-js/loader": "^1.5.1",
     "@mdx-js/mdx": "^1.5.1",
     "@next/mdx": "^9.1.0",
