@@ -16,6 +16,7 @@
     "@mdx-js/loader": "^1.5.1",
     "@mdx-js/mdx": "^1.5.1",
     "@next/mdx": "^9.1.0",
+    "@zeit/next-css": "^1.0.1",
     "next": "^9.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
