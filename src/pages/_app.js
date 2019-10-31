@@ -12,6 +12,7 @@ class MyApp extends App {
       <>
         <Head>
           <title>ReadingWaters</title>
+          <meta name="description" content={"Keith Waters personal blog."} />
         </Head>
         <Layout>
           <Component {...pageProps} />

@@ -12,7 +12,26 @@ class Index extends Component {
               Hi, I'm Keith
             </h1>
             <p>
-              I build web apps with React and Node.
+              I build stuff for the web.
+            </p>
+          </div>
+          <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
+            <h2>
+              About
+            </h2>
+            <p>
+              I started learning web development in the winter of 2016 and got a job in January of the next year. 
+              Since then I've been coding every day. Most of my learning has involved figuring out what needs to 
+              be done for the task at hand. This leaves me feeling like there are lot's of holes in my knowledge.
+            </p>
+            <p>
+              In comes this site. Inspired 
+              by <a href="https://www.taniarascia.com/">Tania Rascia's blog</a> and <a href="https://www.swyx.io/writing/learn-in-public">this</a> article 
+              from Swyx. The goal is to 
+              learn in public and get better every day.
+            </p>
+            <p>
+              Want to contact me? Shoot an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
             </p>
           </div>
         </div>

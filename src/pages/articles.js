@@ -5,8 +5,8 @@ class Articles extends Component {
   render() {
     return (
       <>
-        <p>Articles</p>
-        <Link href={'/articles/jam'} key={Math.random()}><a>Basics of HTML</a></Link>
+        <p>the future Articles page</p>
+        <Link href={'/articles/test'} key={Math.random()}><a>Basics of HTML</a></Link>
       </>
     )
   }
