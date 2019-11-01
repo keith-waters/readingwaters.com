@@ -31,7 +31,7 @@ class Index extends Component {
               learn in public and get better every day.
             </p>
             <p>
-              Want to contact me? Shoot an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
+              Want to contact me? Send an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
             </p>
           </div>
         </div>
