@@ -12,6 +12,9 @@ class MyDocument extends Document {
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           />
+          <link rel="icon" 
+            type="image/x-icon" 
+            href="/favicon.ico" />
         </Head>
         <body>
           <Main />
