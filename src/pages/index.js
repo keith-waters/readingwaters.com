@@ -30,8 +30,29 @@ class Index extends Component {
               from Swyx. The goal is to 
               learn in public and get better every day.
             </p>
+          </div>
+          <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
+            <h2>
+              What I'm doing now
+            </h2>
+            <ul>
+              <li>
+                Studying Data Structures and Algorithms on Coursera
+              </li>
+              <li>
+                Listening to the Mistborn Trilogy by Brandon Sanderson
+              </li>
+              <li>
+                Working as a Web Dev Team Lead
+              </li>
+            </ul>
+          </div>
+          <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
+            <h2>
+              Want to contact me?
+            </h2>
             <p>
-              Want to contact me? Send an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
+              Send an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
             </p>
           </div>
         </div>
