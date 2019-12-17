@@ -55,6 +55,9 @@ class Index extends Component {
               Send an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
             </p>
           </div>
+          <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"right"}}>
+            <a href='https://ko-fi.com/readingwaters'>Support Me on Ko-fi</a>
+          </div>
         </div>
       </>
     )
