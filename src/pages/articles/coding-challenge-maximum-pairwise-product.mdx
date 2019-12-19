@@ -27,8 +27,8 @@ const numArray = [2, 4, 5, 3];
 With the above, it's pretty easy to see that the maximum pairwise product will be 20 or 4 * 5.
 
 One way to solve this is to multiply every number by every other number and see which one is the largest. This is considered the
-naive solution. It works but it's not efficient. For every number in the array you have to multiply it times every other number.
-As the array grows the number of operations grows by a lot.
+naive solution. It works but it's not efficient. For every number in the array you have to multiply it by every other number.
+As the array grows, the number of operations grows by a lot.
 
 Heres some code that does that:
 ```
@@ -49,11 +49,6 @@ const maxPairwiseProduct = numArray => {
 ```
 
 ## The _Faster_ Solution
-
-Given the same array of numbers:
-```
-const numArray = [2, 4, 5, 3];
-```
 
 Since we are looking for the max pairwise product, it's straitforward enough to see that we can look for the 2 biggest numbers in the array.
 That means a lot fewer operations per item in the array. We just need to look for the two largest number and multiply those together to get
@@ -86,7 +81,7 @@ Theoretically the faster solution is much faster over a large array. In the code
 />
 
 The actual execution time will vary a bit, but as you can see the fast solution is _much_ faster. With 10,000 items in the array,
-the naive solution takes somewhere between 380 and 420 milliseconds. The fast solution takes between 0 and 2 milliseconds.
+the naive solution takes somewhere between 300 and 400 milliseconds. The fast solution takes between 0 and 2 milliseconds.
 
 ## Takeaways
 - It's amazing how much faster some solutions are over others

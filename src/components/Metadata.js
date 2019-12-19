@@ -8,8 +8,7 @@ const Metadata = ({metadata}) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className={css.flex}>
-        <img src={logoSrc} alt={logoAlt} height="100px" width="100px" style={{marginRight: "10px"}} />
+      <div className={css.flex} style={{margin: "50px 0 100px 0"}}>
         <div style={{display: "flex", flexDirection: "column"}}>
           <h1 style={{margin: "0 0 0 0"}}>{title}</h1>
           <p style={{margin: "0 0 0 0"}}>{publishDate}</p>
@@ -26,6 +25,7 @@ const Metadata = ({metadata}) => {
             }
           </div>
         </div>
+        <img src={logoSrc} alt={logoAlt} height="100px" width="100px" style={{marginRight: "10px"}} />
       </div>
     </>
   );
