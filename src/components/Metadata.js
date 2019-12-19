@@ -25,7 +25,10 @@ const Metadata = ({metadata}) => {
             }
           </div>
         </div>
-        <img src={logoSrc} alt={logoAlt} height="100px" width="100px" style={{marginRight: "10px"}} />
+        {
+          logoSrc &&
+          <img src={logoSrc} alt={logoAlt} height="100px" width="100px" style={{marginRight: "10px"}} />
+        }
       </div>
     </>
   );
