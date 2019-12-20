@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
+import articlesList from '../utils/articlesList'
 
 class Articles extends Component {
   render() {
     return (
       <>
-        <p>the future Articles page</p>
-        <Link href={'/articles/test'} key={Math.random()}><a>Basics of HTML</a></Link>
+        <h2>Articles</h2>
+        {
+          articlesList.map(article => {
+            return (
+              <Link href={"/articles" + article.url} key={Math.random()}><a>{article.title}</a></Link>
+
+            )
+          })
+        }
       </>
     )
   }
