@@ -10,6 +10,7 @@ class ReadingWaters extends App {
   render() {
     const { Component, pageProps } = this.props;
 
+    console.log(process.env)
     return (
       <>
         <Head>
