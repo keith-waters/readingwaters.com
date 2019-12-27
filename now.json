@@ -1,5 +1,10 @@
 {
   "env": {
     "gatrackingid": "@gatrackingid"
+  },
+  "build": {
+    "env": {
+      "gatrackingid": "@gatrackingid"
+    }
   }
 }
