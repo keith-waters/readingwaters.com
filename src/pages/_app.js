@@ -1,10 +1,12 @@
 import App from 'next/app';
 import Head from 'next/head';
+import Router from 'next/router';
+import withGA from 'next-ga';
 import Layout from '../components/Layout';
 import '../styles/normalize.css';
 import '../styles/style.css';
 
-class MyApp extends App {
+class ReadingWaters extends App {
   render() {
     const { Component, pageProps } = this.props;
 
@@ -22,4 +24,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default withGA(process.env.gatrackingid, Router)(ReadingWaters);
