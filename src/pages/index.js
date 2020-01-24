@@ -40,10 +40,13 @@ class Index extends Component {
                 Studying Data Structures and Algorithms on Coursera
               </li>
               <li>
-                Listening to the Mistborn Trilogy by Brandon Sanderson
+                Learning Ruby on Rails! (I got a new job. :) )
               </li>
               <li>
-                Working as a Web Dev Team Lead
+                Reading Traction by Gino Wickman
+              </li>
+              <li>
+                Working as a Web Dev Team Lead, soon to be React Developer at <a target="_blank" href="https://www.bidwrangler.com/">BidWrangler</a>
               </li>
             </ul>
           </div>
