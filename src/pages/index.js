@@ -37,16 +37,10 @@ class Index extends Component {
             </h2>
             <ul>
               <li>
-                Studying Data Structures and Algorithms on Coursera
+                Working through <a target="_blank" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">Javascript Algorithms and Data Structures</a> with some friends.
               </li>
               <li>
-                Learning Ruby on Rails! (I got a new job. :) )
-              </li>
-              <li>
-                Reading Traction by Gino Wickman
-              </li>
-              <li>
-                Working as a Web Dev Team Lead, soon to be React Developer at <a target="_blank" href="https://www.bidwrangler.com/">BidWrangler</a>
+                Working as a React Developer at <a target="_blank" href="https://www.bidwrangler.com/">BidWrangler</a>
               </li>
             </ul>
           </div>
