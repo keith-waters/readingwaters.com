@@ -7,14 +7,18 @@ class Articles extends Component {
     return (
       <>
         <h2>Articles</h2>
-        {
-          articlesList.map(article => {
-            return (
-              <Link href={"/articles" + article.url} key={Math.random()}><a>{article.title}</a></Link>
+        <ul>
+          {
+            articlesList.map(article => {
+              return (
+                <li key={article.url}>
+                  <Link href={"/articles" + article.url}><a>{article.title}</a></Link>
+                </li>
 
-            )
-          })
-        }
+              )
+            })
+          }
+        </ul>
       </>
     )
   }
