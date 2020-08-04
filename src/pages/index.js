@@ -37,7 +37,7 @@ class Index extends Component {
             </h2>
             <ul>
               <li>
-                Working through <a target="_blank" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">Javascript Algorithms and Data Structures</a> with some friends.
+                Watching and thinking on the Clean Code principles. Links: <a target="_blank" href="https://youtu.be/7EmboKQH8lM">lectures on youtube</a>, <a target="_blank" href="https://www.goodreads.com/book/show/3735293-clean-code">Goodreads link</a>
               </li>
               <li>
                 Working as a React Developer at <a target="_blank" href="https://www.bidwrangler.com/">BidWrangler</a>
