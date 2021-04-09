@@ -12,23 +12,7 @@ class Index extends Component {
               Hi, I'm Keith
             </h1>
             <p>
-              I build stuff for the web.
-            </p>
-          </div>
-          <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
-            <h2>
-              About
-            </h2>
-            <p>
-              I started learning web development in the winter of 2016 and got a job in January of the next year. 
-              Since then I've been coding every day. Most of my learning has involved figuring out what needs to 
-              be done for the task at hand. This leaves me feeling like there are lot's of holes in my knowledge.
-            </p>
-            <p>
-              In comes this site. Inspired 
-              by <a href="https://www.taniarascia.com/">Tania Rascia's blog</a> and <a href="https://www.swyx.io/writing/learn-in-public">this</a> article 
-              from Swyx. The goal is to 
-              learn in public and get better every day.
+              I hang out and write code.
             </p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
@@ -37,7 +21,10 @@ class Index extends Component {
             </h2>
             <ul>
               <li>
-                Watching and thinking on the Clean Code principles. Links: <a target="_blank" href="https://youtu.be/7EmboKQH8lM">lectures on youtube</a>, <a target="_blank" href="https://www.goodreads.com/book/show/3735293-clean-code">Goodreads link</a>
+                Reading Clean Code Links: <a target="_blank" href="https://youtu.be/7EmboKQH8lM">lectures on youtube</a>, <a target="_blank" href="https://www.goodreads.com/book/show/3735293-clean-code">Goodreads link</a>
+              </li>
+              <li>
+                Reading Structure and Interpretations of Computer Programs Links: <a target="_blank" href="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html">SICP</a>
               </li>
               <li>
                 Working as a React Developer at <a target="_blank" href="https://www.bidwrangler.com/">BidWrangler</a>
@@ -51,9 +38,6 @@ class Index extends Component {
             <p>
               Send an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
             </p>
-          </div>
-          <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"right"}}>
-            <a href='https://ko-fi.com/readingwaters'>Support Me on Ko-fi</a>
           </div>
         </div>
       </>
