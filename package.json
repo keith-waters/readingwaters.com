@@ -13,14 +13,12 @@
   "author": "Keith Waters",
   "license": "MIT",
   "dependencies": {
-    "@mdx-js/loader": "^1.5.1",
-    "@mdx-js/mdx": "^1.5.1",
-    "@next/mdx": "^9.1.0",
-    "@zeit/next-css": "^1.0.1",
+    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/mdx": "^1.6.22",
+    "@next/mdx": "^10.2.3",
     "minimist": "^1.2.5",
-    "next": "^9.5.1",
-    "next-ga": "^2.3.4",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
