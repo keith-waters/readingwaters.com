@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import css from './metadata.css';
+import css from './metadata.module.css';
 
 const Metadata = ({metadata}) => {
   const {title, logoSrc, logoAlt, publishDate, tags} = metadata;
