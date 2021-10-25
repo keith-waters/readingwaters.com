@@ -12,7 +12,7 @@ class Index extends Component {
               Hi, I'm Keith
             </h1>
             <p>
-              I hang out and write code.
+              I'm hanging out and writing code.
             </p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
@@ -21,10 +21,12 @@ class Index extends Component {
             </h2>
             <ul>
               <li>
-                Reading Clean Code Links: <a target="_blank" href="https://youtu.be/7EmboKQH8lM">lectures on youtube</a>, <a target="_blank" href="https://www.goodreads.com/book/show/3735293-clean-code">Goodreads link</a>
-              </li>
-              <li>
-                Reading Structure and Interpretations of Computer Programs Links: <a target="_blank" href="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html">SICP</a>
+                Reading Extreme Ownership Links:  <a target="_blank" href="https://echelonfront.com/extreme-ownership/">Echelon Front's book page</a>
+                <ul>
+                  <li>
+                    I'm not a military fanboy, but the story telling is great and the stories amazing. Highly recommend.
+                  </li>
+                </ul>
               </li>
               <li>
                 Working as a React Developer at <a target="_blank" href="https://www.bidwrangler.com/">BidWrangler</a>
