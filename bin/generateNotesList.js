@@ -20,5 +20,5 @@ data.forEach(file => {
   metadata.push(file.substring(start,end+2)+',\n')
 })
 
-const contents = 'export const metadata = [\n' + metadata.join() + ']'
-fs.writeFileSync('test.js', contents)
+const contents = 'module.exports = [\n' + metadata.join() + ']'
+fs.writeFileSync('./src/utils/articlesList.js', contents)
