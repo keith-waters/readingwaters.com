@@ -14,8 +14,8 @@ class Layout extends Component {
             <Link href="/">
               <a style={{flexGrow: "1", color: "white", textDecoration: "none", fontSize: "1.5em"}}>ReadingWaters</a>
             </Link>
-            <Link href="/articles">
-              <a style={{color: "white", textDecoration: "none"}}>Articles</a>
+            <Link href="/notes">
+              <a style={{color: "white", textDecoration: "none"}}>Notes</a>
             </Link>
           </div>
         </div>

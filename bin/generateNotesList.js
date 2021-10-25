@@ -21,4 +21,4 @@ data.forEach(file => {
 })
 
 const contents = 'module.exports = [\n' + metadata.join() + ']'
-fs.writeFileSync('./src/utils/articlesList.js', contents)
+fs.writeFileSync('./src/utils/notesList.js', contents)

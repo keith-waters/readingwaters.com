@@ -1,4 +1,4 @@
-const ArticleFooter = () => {
+const NoteFooter = () => {
   return (
     <div style={{marginBottom: "100px", padding: "10px", borderRadius: "5px", backgroundColor: "lightgray"}}>
       <h2 style={{marginTop: "0"}} >
@@ -11,4 +11,4 @@ const ArticleFooter = () => {
   );
 }
 
-export default ArticleFooter;
+export default NoteFooter;

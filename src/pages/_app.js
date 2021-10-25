@@ -12,7 +12,7 @@ class ReadingWaters extends App {
       <>
         <Head>
           <title>ReadingWaters</title>
-          <meta name="description" content={"Keith Waters personal blog."} />
+          <meta name="description" content={"Keith Waters personal site."} />
         </Head>
         <Layout>
           <Component {...pageProps} />
