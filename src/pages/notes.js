@@ -11,7 +11,7 @@ class Notes extends Component {
           {
             notesList.map(note => {
               return (
-                <li key={note.url}>
+                <li style={{ border: "1px solid lightGrey", borderRadius: 3, lineHeight: '2em', padding: '0 0 0 10px', margin: 2 }}key={note.url}>
                   <Link href={"/notes" + note.url}><a>{note.title}</a></Link>
                 </li>
 
