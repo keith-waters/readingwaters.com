@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import About from '../components/About'
 
 class Index extends Component {
 
@@ -6,15 +7,7 @@ class Index extends Component {
     return (
       <>
         <div style={{padding:"10px", textAlign:"center"}}>
-          <img src="/keith-waters-headshot.jpg" alt="Keith Waters" component="img" style={{display:"inline", width:"200px", borderRadius:"4px"}} />
-          <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"center"}}>
-            <h1>
-              Hi, I'm Keith
-            </h1>
-            <p>
-              I'm hanging out and writing code.
-            </p>
-          </div>
+          <About/>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
             <h2>
               What I'm doing now

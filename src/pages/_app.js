@@ -22,5 +22,4 @@ class ReadingWaters extends App {
   }
 }
 
-// export default withGA(process.env.gatrackingid, Router)(ReadingWaters);
 export default ReadingWaters;
