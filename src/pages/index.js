@@ -12,33 +12,23 @@ class Index extends Component {
               Hi, I'm Keith
             </h1>
             <p>
-              I'm hanging out and writing code.
+              I've been working on websites and writing software since January of 2017. It's been a fun and wild ride since then! I have learned a ton along the way. Everything from WordPress, PHP, JQuery, HTML, CSS to Node.js, React.js, TypeScript, AWS.... the list goes on. :)
             </p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
             <h2>
               What I'm doing now
             </h2>
-            <ul>
-              <li>
-                Reading Extreme Ownership Links:  <a target="_blank" href="https://echelonfront.com/extreme-ownership/">Echelon Front's book page</a>
-                <ul>
-                  <li>
-                    I'm not a military fanboy, but the story telling is great and the stories amazing. Highly recommend.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Working as a React Developer at <a target="_blank" href="https://www.bidwrangler.com/">BidWrangler</a>
-              </li>
-            </ul>
+						<p>
+							Building 3 SaaS products in 3 months! I'm starting on Sept 1, 2022 and finishing up at the end of November.
+						</p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
             <h2>
-              Want to contact me?
+              Have questions or want to chat?
             </h2>
             <p>
-              Send an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
+							Reach out to me on Twitter <a href="https://twitter.com/readingwaters">@readingwaters</a>
             </p>
           </div>
         </div>
