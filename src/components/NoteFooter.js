@@ -5,7 +5,7 @@ const NoteFooter = () => {
         See something you like? Want to continue the conversation?
       </h2>
       <p style={{marginBottom: "0"}} >
-        Send an email to <a href="mailto:readingwaters@gmail.com">readingwaters@gmail.com</a>
+				Reach out to me on Twitter <a href="https://twitter.com/readingwaters">@readingwaters</a>
       </p>
     </div>
   );
