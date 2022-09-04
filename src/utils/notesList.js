@@ -1,5 +1,13 @@
 module.exports = [
 {
+  title: '3 projects in 3 months',
+  url: '/3-projects-in-3-months',
+  publishDate: '2022-09-03',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['saas'],
+},
+,{
   title: 'Coding Challenge: Maximum Pairwise Product',
   url: '/coding-challenge-maximum-pairwise-product',
   publishDate: '2019-12-19',

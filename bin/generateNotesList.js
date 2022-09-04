@@ -10,7 +10,7 @@ function readFilesSync(dir) {
   return data
 }
 
-const data = readFilesSync('./src/pages/articles/')
+const data = readFilesSync('./src/pages/notes/')
 
 const metadata = []
 data.forEach(file => {
