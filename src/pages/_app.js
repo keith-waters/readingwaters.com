@@ -13,6 +13,7 @@ class ReadingWaters extends App {
         <Head>
           <title>ReadingWaters</title>
           <meta name="description" content={"Keith Waters personal site."} />
+					<script defer data-domain="readingwaters.com" src="https://plausible.io/js/plausible.js"></script>
         </Head>
         <Layout>
           <Component {...pageProps} />
