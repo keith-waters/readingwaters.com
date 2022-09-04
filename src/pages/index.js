@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Link from 'next/link'
 
 class Index extends Component {
 
@@ -20,7 +21,7 @@ class Index extends Component {
               What I'm doing now
             </h2>
 						<p>
-							Building 3 SaaS products in 3 months! I'm starting on Sept 1, 2022 and finishing up at the end of November.
+							Building 3 SaaS products in 3 months! <Link href={"/notes/3-projects-in-3-months"}><a>(read more about it here)</a></Link> I'm starting in September and finishing up at the end of November.
 						</p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
