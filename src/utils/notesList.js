@@ -1,5 +1,13 @@
 module.exports = [
 {
+  title: 'First Project: Yet Another Link Shortener!',
+  url: '/first-project-yet-another-link-shortener',
+  publishDate: '2022-09-06',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['saas', '3-projects-in-3-months', 'yet-another-link-shortener'],
+},
+{
   title: '3 projects in 3 months',
   url: '/3-projects-in-3-months',
   publishDate: '2022-09-03',

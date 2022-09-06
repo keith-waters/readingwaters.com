@@ -1,0 +1,41 @@
+import Metadata from '../../components/Metadata';
+import NoteFooter from '../../components/NoteFooter';
+import Link from 'next/link'
+export const metadata = {
+  title: 'First Project: Yet Another Link Shortener!',
+  url: '/first-project-yet-another-link-shortener',
+  publishDate: '2022-09-06',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['saas', '3-projects-in-3-months', 'yet-another-link-shortener'],
+}
+
+<Metadata metadata={metadata} />
+
+
+## First Idea: Yet Another Link Shortener!
+
+Yep, you got it. I'm making a link shortener. 
+
+I forget how I landed on this idea. But I've been thinking about it for a while now and really want to build one. There are tons of them out there, which means lots of examples and endless feature ideas!
+
+Another reason I like it is the basic premise is simple: take one link and redirect it to another. Which is right in line with the 3 projects in 3 months goal. <Link href={"/notes/3-projects-in-3-months"}><a>(You can check out the other goals here.)</a></Link>
+
+My hope is to start small and then be able to iterate on it.
+
+Initial scope will be: 
+- User can sign up
+- User can pay for the subscription
+- User can create a shortened link
+- User can view all their shortened links in a dashboard
+
+Some stretch goals are:
+- edit/delete links in dashboard
+- a CRUD API to interact with the software
+- custom domains for the short link
+- some metrics, at least click counts
+- ???
+
+If you have any other ideas, let me know on Twitter!
+
+<NoteFooter />
