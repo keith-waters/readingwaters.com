@@ -1,5 +1,13 @@
 module.exports = [
 {
+  title: 'YALS technology choices and system layout',
+  url: '/yals-technology-choices-and-system-layout',
+  publishDate: '2022-09-06',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['saas', '3-projects-in-3-months', 'yet-another-link-shortener'],
+},
+,{
   title: 'First Project: Yet Another Link Shortener!',
   url: '/first-project-yet-another-link-shortener',
   publishDate: '2022-09-06',
@@ -16,19 +24,19 @@ module.exports = [
   tags: ['saas'],
 },
 ,{
-  title: 'Coding Challenge: Maximum Pairwise Product',
-  url: '/coding-challenge-maximum-pairwise-product',
-  publishDate: '2019-12-19',
-  logoSrc: '',
-  logoAlt: '',
-  tags: ['coding-challenge', 'algorithms'],
-},
-,{
   title: 'Writing Comments in Javascript and other languages',
   url: '/writing-comments-in-javascript-and-other-languages',
   publishDate: '2020-03-31',
   logoSrc: '',
   logoAlt: '',
   tags: ['intro to programming', 'comments', 'javascript', 'ruby', 'python', 'c', 'c++'],
+},
+,{
+  title: 'Coding Challenge: Maximum Pairwise Product',
+  url: '/coding-challenge-maximum-pairwise-product',
+  publishDate: '2019-12-19',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['coding-challenge', 'algorithms'],
 },
 ]

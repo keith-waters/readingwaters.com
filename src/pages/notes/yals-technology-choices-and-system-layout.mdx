@@ -1,0 +1,49 @@
+import Metadata from '../../components/Metadata';
+import NoteFooter from '../../components/NoteFooter';
+import Link from 'next/link'
+export const metadata = {
+  title: 'YALS technology choices and system layout',
+  url: '/yals-technology-choices-and-system-layout',
+  publishDate: '2022-09-06',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['saas', '3-projects-in-3-months', 'yet-another-link-shortener'],
+}
+
+<Metadata metadata={metadata} />
+
+## Yet Another Link Shortener!(YALS)
+
+My decision making process around the technologies and system layout stem from what I already know and what I want to learn more about.
+
+### Tech choices:
+**TypeScript:** I've been using it the past few months and want to get better with it.
+
+**Next.js:** I _really_ like Next. It handles so much out of the box.
+
+**Node.js:** Gotta use TypeScript on the backend too!
+
+**Supabase:** Just heard about this one! I'm exited to try it out for Auth and database stuff.
+
+**Stripe:** Easy payment processing.
+
+**Digital Ocean:** I've used AWS, Heroku, Digital Ocean and a few others. Really sold on the UI and simplicity of Digital Ocean.
+
+**GitHub Actions:** Another thing to learn. Basically want this to run tests and after they pass allow the code to get deployed to a staging environment.
+
+**Plausible:** I've thought about analytics maybe twice in my career. Chose this one based off some recent Twitter conversations. It's GDPR compliant and really simple to set up. (It's running on this site now)
+
+### System Layout:
+
+Next.js will do the heavy lifting. It will be the marketing site and the user dashboard. The Next site will be deployed to Digital Ocean App Platform.
+
+App Platform allows me to have easy to setup continous deployment with it's GitHub integration. I'll have the main branch automatically deploy to the staging environment. For the production environment, I'll set it up so I have to go into Digital Ocean and press the "deploy" button.
+
+Redirects will be handled by an Express/Node server hosted on Digital Ocean's Functions separate from the Next.js app. This will make it easier to point different domains at the service. 
+
+Supabase will handle Auth and the database side of things. The user dashboard will integrate with Supabase for Auth and database CRUD operations. The redirect service will need access to the database to convert the short links to the long links.
+
+Anything I'm missing? Shout it out on Twitter!
+
+
+<NoteFooter />
