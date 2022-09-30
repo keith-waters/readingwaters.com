@@ -1,5 +1,13 @@
 module.exports = [
 {
+  title: 'Project 1, what I learned, and plans for Project 2',
+  url: '/project-1-what-i-learned-plans-project-2',
+  publishDate: '2022-09-30',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['saas', '3-projects-in-3-months', 'yet-another-link-shortener'],
+},
+{
   title: 'YALS technology choices and system layout',
   url: '/yals-technology-choices-and-system-layout',
   publishDate: '2022-09-06',
