@@ -13,7 +13,7 @@ class Index extends Component {
               Hi, I'm Keith
             </h1>
             <p>
-              I've been working on websites and writing software since January of 2017. It's been a fun and wild ride since then! I have learned a ton along the way. Everything from WordPress, PHP, JQuery, HTML, CSS to Node.js, React.js, TypeScript, AWS.... the list goes on. :)
+              Former whitewater river guide, washed up creek boater, was a vaccuum salesman once, painted and fixed houses for money. Now making software using TypeScript. splash, splash and beep, boop
             </p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
@@ -21,7 +21,7 @@ class Index extends Component {
               What I'm doing now
             </h2>
 						<p>
-							Building 3 SaaS products in 3 months! <Link href={"/notes/3-projects-in-3-months"}><a>(read more about it here)</a></Link> I'm starting in September and finishing up at the end of November.
+              Working a day job as a software engineer and building a job board on the side. Sharing stuff about the job board on twitter :) 
 						</p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
