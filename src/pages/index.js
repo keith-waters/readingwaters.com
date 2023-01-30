@@ -21,7 +21,7 @@ class Index extends Component {
               What I'm doing now
             </h2>
 						<p>
-              Working a day job as a software engineer and building a job board on the side. Sharing stuff about the job board on twitter :) 
+              Working a day job as a software engineer and building <a href="https://typescriptjobs.io">typescriptjobs.io</a> on the side. :) 
 						</p>
           </div>
           <div style={{marginLeft:"10px", flexGrow:"1", textAlign:"left"}}>
