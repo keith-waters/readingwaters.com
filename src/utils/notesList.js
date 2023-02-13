@@ -1,5 +1,13 @@
 module.exports = [
 {
+  title: 'First month building typescriptjobs.io',
+  url: '/first-month-building-typescriptjobs-io',
+  publishDate: '2023-02-13',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['typescriptjobs', 'buildinpublic', 'indiehacker'],
+},
+{
   title: 'Project 1, what I learned, and plans for Project 2',
   url: '/project-1-what-i-learned-plans-project-2',
   publishDate: '2022-09-30',
@@ -15,7 +23,7 @@ module.exports = [
   logoAlt: '',
   tags: ['saas', '3-projects-in-3-months', 'yet-another-link-shortener'],
 },
-,{
+{
   title: 'First Project: Yet Another Link Shortener!',
   url: '/first-project-yet-another-link-shortener',
   publishDate: '2022-09-06',
@@ -31,7 +39,7 @@ module.exports = [
   logoAlt: '',
   tags: ['saas'],
 },
-,{
+{
   title: 'Writing Comments in Javascript and other languages',
   url: '/writing-comments-in-javascript-and-other-languages',
   publishDate: '2020-03-31',
@@ -39,7 +47,7 @@ module.exports = [
   logoAlt: '',
   tags: ['intro to programming', 'comments', 'javascript', 'ruby', 'python', 'c', 'c++'],
 },
-,{
+{
   title: 'Coding Challenge: Maximum Pairwise Product',
   url: '/coding-challenge-maximum-pairwise-product',
   publishDate: '2019-12-19',
