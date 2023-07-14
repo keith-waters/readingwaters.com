@@ -1,5 +1,13 @@
 module.exports = [
 {
+  title: 'Learnings building typescriptjobs.io',
+  url: '/learnings-building-typescriptjobsio',
+  publishDate: '2023-07-14',
+  logoSrc: 'https://typescriptjobs.io/apple-touch-icon.png',
+  logoAlt: 'typescriptjobs.io icon',
+  tags: ['typescriptjobs', 'buildinpublic', 'indiehacker'],
+},
+{
   title: 'First month building typescriptjobs.io',
   url: '/first-month-building-typescriptjobs-io',
   publishDate: '2023-02-13',

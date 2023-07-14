@@ -8,3 +8,11 @@ pre {
   padding: 10px;
   overflow-x: scroll;
 }
+
+p img {
+  width: 100%;
+}
+
+#supabase-logo {
+  max-width: 200px;
+}
