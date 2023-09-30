@@ -1,5 +1,13 @@
 module.exports = [
 {
+  title: 'My first time deployment checklist',
+  url: '/first-time-deployment-checklist',
+  publishDate: '2023-09-29',
+  logoSrc: '',
+  logoAlt: '',
+  tags: ['deployment'],
+},
+{
   title: 'Learnings building typescriptjobs.io',
   url: '/learnings-building-typescriptjobsio',
   publishDate: '2023-07-14',
