@@ -3,6 +3,7 @@ export async function POST(req: Request) {
   const data = {
     email,
     status: 'active',
+    groups: ['110017345201636525'],
   }
 
   try {
