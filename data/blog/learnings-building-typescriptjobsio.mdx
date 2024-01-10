@@ -1,0 +1,41 @@
+---
+  title: 'Learnings building typescriptjobs.io'
+  date: '2023-07-14'
+  tags: ['typescriptjobs', 'buildinpublic', 'indiehacker']
+---
+
+## TLDR
+- Google Search Console exists
+- Pulling jobs from other job board APIs
+- Supabase is awesome
+
+<hr/>
+
+## Google Search Console exists
+![Google search console performance graph](/static/images/blog/learnings-building-typescriptjobsio/google-search-console.png)
+<br/>
+Literally had no idea this existed before starting the typescriptjobs.io project! None of my previous work had anything SEO or even getting it setup.
+
+Pretty stoked that it is able to pull in a site map and process the pages. A big win is having it report problems with any pages.
+<hr/>
+
+## Pulling jobs from other job board APIs
+One of my burning questions when thinking about building a job board was: **Where do job boards get their initial jobs?**
+
+Turns out there is a handful of different ways. You can contact companies for jobs, manually collect job posts from other sites, automatically scrape them from other job sites, or find job boards with APIs.
+
+I managed to find a couple of job boards with APIs! This seemed to be the cleanest way and easiest to automate. And I didn't want to mess with web scraping.
+
+After setting up a simple aggregation service to parse two different job APIs, I was pulling in job posts.
+
+Typescriptjobs.io is currently setup to pull in jobs once a day using that service and store them in a database.
+
+Note that I took Petier Levels approach ([read about it here](https://levels.io/remote-ok/)) and made sure to use follow links and accredit the job site that I pulled the jobs from. 
+<hr/>
+
+## Supabase is awesome
+![Supabase logo](/static/images/blog/learnings-building-typescriptjobsio/supabase-logo-wordmark--light.png)
+Don't know what else needs to be said here. I didn't know about [Supabase](https://supabase.com/) before starting typescriptjobs.io. Learning about it, how to use it, and implementing it was FAST!
+
+They definitely made things easy.
+

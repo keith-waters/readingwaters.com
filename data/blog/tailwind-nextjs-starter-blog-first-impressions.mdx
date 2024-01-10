@@ -1,0 +1,35 @@
+---
+  title: 'First impressinos on the Tailwind Nextjs Starter Blog'
+  date: '2024-01-04'
+  tags: ['tailwind', 'contentlayer']
+---
+
+Check this starter template out: [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog). It's written by Timothy Lin (you can check out their site [here](https://www.timlrx.com/)). I don't who Timothy is, but I'm now veeeery appreciative of their work on the blog template.
+
+For the longest time I really wanted to have a blog framework that I could write posts in Markdown or MDX. Many things were tried and none of them were great.
+
+Then I somehow landed on this starter blog! It solves the biggest problem I've been having trying to build my own: 
+
+# Content management
+
+It does this by using [Contentlayer](https://contentlayer.dev/). And it's is great! In Contentlayer's own words:
+
+> Contentlayer is a that validates and transforms your content into JSON data you can easily import into your application.
+
+How it's used in the starter blog (and how I've started using it in other projects), is to manage folders of MDX files in the same code repository as the Next.js app. Having the content right next to the code really works for my workflow.
+
+# 2 things that surprised me
+
+## 1. The Next.js app directory.
+
+I've been putting off learning the app directory for quite a while. I tried to port over a couple projects that were using the pages directory, immediately ran into problems, and then just kept using the pages directory. The starter blog is a nice and gentle introduction into the app directory world.
+
+Most of those app directory problems were around using Material UI (MUI) and the differences between server and client pages. And the starter blog doesn't use MUI, it uses Tailwind and custom components. 
+
+Which leads into....
+
+## #2 Tailwind CSS
+
+Wow, I have no idea why I was so resistant to it for so long. It's easy to setup and easy to use. Tailwind Nextjs Starter Blog uses it everywhere. 
+
+I found it really easy to just pick up and start styling components. The VS Code extention helps a TON here.
