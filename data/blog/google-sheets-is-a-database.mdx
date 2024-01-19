@@ -1,0 +1,44 @@
+---
+  title: 'Google Sheets is a database'
+  date: '2024-01-16'
+  tags: ['remnant2gear', 'buildinpublic']
+---
+
+# How it started
+When thinking about how to build [Remnant 2 Gear](https://remnant2gear.com), I knew we wanted to be able to update a Google sheed and have that update the web app automatically.
+
+# Idea #1
+The first thing I thought of was using the [Google Sheets API](https://developers.google.com/sheets/api/guides/concepts). This is not something that I wanted to do, but it was the only surefire way that I knew about.
+
+So, I start digging and reading through the docs. And it became very apparent that I didn't want to use this solution.
+
+I did not want to set up a Google Cloud account.
+
+I did not want to set up OAuth.
+
+I did not want to use the Google Sheets SDK (or whichever one there is). 
+
+And really, I didn't need all the features that the Google Sheets API offers. No need to create, update, or delete sheets. The only need was to read the data.
+
+# Idea #2
+Copy and paste the Google Sheet into a CSV to JSON converter [like this one](https://csvjson.com/csv2json), no affiliation, just the one I like. After getting the JSON the store it in the code repo.
+
+The main problem with this is how to update the web app data when the Google Sheet was updated.
+
+The best thing I could come up with is some cron job that runs on an interval, but even that doesn't work because there's no programattic way to get the data. 
+
+# Idea #3 The winner!
+And then I randomly found [this article](https://support-eventpilot.ativsoftware.com/support/solutions/articles/6000129465-how-do-i-get-a-csv-file-link-from-a-google-spreadsheet-) on the EventPilot support pages.
+
+No idea who or what EventPilot is, but I sure am glad they wrote that article.
+
+Turns out you can publish a Google Sheet to the web! And you can publish it as a csv! (and a handful of other things too)
+
+AND that csv automatically updates when an update is made to the Google sheet!
+
+# How it works for Remnant 2 Gear
+When you first go to [Remnant 2 Gear](https://remnant2gear.com), you'll see a loading message.
+
+During that loading message, the web app is getting the csv from that published url, transforming it into JSON, parsing out all the categories and filters, then displaying the data.
+
+It's not "elagant" or "clever", but holy crap is it simple and easy to update.

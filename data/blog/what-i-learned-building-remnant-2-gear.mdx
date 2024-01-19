@@ -1,0 +1,43 @@
+---
+  title: 'What I learned building Remnant 2 Gear'
+  date: '2024-01-18'
+  tags: ['remnant2gear', 'buildinpublic']
+---
+
+# Working with a friend is a lot of fun 
+A couple of my friends and I have been playing Remnant 2 since it came out and we've really enjoyed it! One friend even made a Google Sheet to tag all the gear, perks, and traits in the game. 
+
+For months we've been joking around about turning that spread sheet into a web app. Then over the 2023 winter holidays, we decided to do it!
+
+We split up the work by "data architecture" and "writing the code". Obviously there was some overlap, but I took the coding portion (as thats kinda my thing) and he took the data portion because he was already doing that.
+
+Super fun to work on something with a friend who is just as excited about it!
+
+# Using a google sheet as a database
+One of the goals of Remnant 2 Gear was to be able to update the Google Sheet and have that reflected in the web app automatically.
+
+I went through a [few different ideas](/blog/google-sheets-is-a-database) before I landed on importing the sheet as a csv and then processing it on the client side.
+
+# Web scraping is fun
+One of the things I really wanted in the web app is pictures. As I'm scanning for gear in game, I scan the images... and not so much the name of the piece of gear.
+
+So, I build a web scraper to parse the [Remnant 2 wiki](https://remnant2.wiki.fextralife.com/Remnant+2+Wiki). It's not anything fancy but it does get the job done.
+
+Once the scraper was built, it was easy to scrape all the data then import it into the Google Sheet. Then my friend could tag everything and update the data as needed.
+
+# Processing a csv into JSON
+When you go to [remnant2gear.com](https://remnant2gear.com) the first thing that happens is the web app pulls in the csv. 
+
+It then converts the csv to JSON and parses all the categories and filters. From there it loads all the data into the page.
+
+And that's all happening clientside, in the browser!
+
+# Building a "simple" tool still takes some time
+Even though Remnant 2 Gear is a "simple" tool, it still took me and my friend some time to get the data in a good place and figure out how to display it.
+
+Oh, and I'm only working a few hours a week on it.
+
+# What's next for Remnant 2 Gear?
+Show it to the Remnant 2 community! 
+
+Let them have at it, hopefully find it useful, and maybe even get back to me with some suggestions.

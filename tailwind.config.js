@@ -59,6 +59,9 @@ module.exports = {
               },
               code: { color: theme('colors.primary.400') },
             },
+            'p,ul,ol': {
+              color: `${theme('colors.white')}`,
+            },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
             },
