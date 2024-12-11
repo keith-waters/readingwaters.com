@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'ReadingWaters',
   author: 'Keith Waters',
   headerTitle: 'ReadingWaters',
-  description: 'Coding and Business',
+  description: 'Learing stuff',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://readingwaters.com',

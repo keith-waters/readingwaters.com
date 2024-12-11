@@ -1,0 +1,83 @@
+---
+  title: 'Writing and Running a Hello World program in C'
+  date: '2024-11-18'
+  tags: ['c']
+---
+
+
+# Requirements
+- Mac computer
+- Xcode installed
+- Text editor
+- Familiarity with the command line
+
+I'm doing this on a MacBook Pro that I already use for web development. All of the commands and code will be written with that in mind.
+
+# Writing the program
+
+Open your terminal and navigate to a directory you want to work in. I made mine in `/readingwaters/projects/c-lang-fun` 
+
+Once there, you'll want to make the file that holds your code. You can do this by running:
+```
+touch helloworld.c
+```
+
+Now the file is made open it up in your favorite text editor.
+
+Then put in code that looks like this:
+```
+#include <stdio.h>
+
+int main() {
+  printf("Hello, World!\n");
+  return 0;
+}
+```
+
+Lets walk through that line by line
+
+- `#include <stdio.h>` brings in the header file so we can use `printf` below
+- `int main() {` sets the return type to integer and defines our main function 
+- `printf("Hello, World!\n");` will print the `"Hello, World!\n"` string (technically a character array) to standard out, the terminal in our case
+- `return 0;` fulfills our functions return type
+- `}` closes our function
+
+# Compiling the program
+`clang` is C compiler that you can use from the command line. There are a ton of them and if you are just starting out, like I am, don't worry about which one too much.
+
+If you have Xcode installed on your Mac, should already have `clang`. You can check by running: 
+```
+clang -v
+```
+
+When I run it it gives me:
+```
+Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+Target: arm64-apple-darwin23.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+```
+
+Do I know what all that means? Nope. It does tell me I have `clang` installed though 😅
+
+To compile `helloworld.c` all you have to run is 
+```
+clang helloworld.c
+```
+
+That should create another file in the same directory called `a.out`
+
+# Running your Hello World program
+With `helloworld.c` compiled to `a.out` all you need to do is run `a.out`! You can do this by running:
+```
+./a.out
+```
+
+You should get some thing like:
+```
+Hello, World!
+```
+
+Huzzah! You did it! A Hello World program in C!
+
+
