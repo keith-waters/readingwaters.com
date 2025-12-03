@@ -2,7 +2,6 @@ export async function POST(req: Request) {
   const { email } = await req.json()
   const data = {
     email,
-    status: 'active',
     groups: ['110017345201636525'],
   }
 
