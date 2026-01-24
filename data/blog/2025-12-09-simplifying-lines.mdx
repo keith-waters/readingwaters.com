@@ -1,0 +1,31 @@
+---
+title: 'Simplifying Lines'
+date: '2025-12-09'
+tags: ['gamedev', 'thelinesgame']
+---
+
+Tuning, tuning, tuning. At least that's what I thought I'd be doing at the end of the last post... Instead I ended up ripping out a bunch of code and simplifying the Lines game even more.
+
+Ok, I did do some tuning BEFORE I pulled a bunch of the code out. I tried a bunch of different things that didn't quite feel right for this game.
+
+## Cost groups
+
+![Cost groups screenshot](/static/images/blog/simplifying-lines/screenshot-1.png)
+
+For the unlocks I made cost groups, for a given set of unlocks the cost starts the same, say 1 paper, after you buy one the cost for the rest triples, so they would all cost 3 now. My hope was that this would provide some "fun decision making" as you progress through the upgrades. For now I took it out because it added another multiplier in the growing combinatorics of levers to pull for tuning.
+
+## Playing with Tiers and Levels
+
+![Tiers and levels screenshot](/static/images/blog/simplifying-lines/screenshot-2.png)
+
+The next thing I tried was adding max level unlocks for all the upgrades. And that felt ok with the play testing. Again though, it made progression tuning very difficult. I had 4 different resources: lines, digons, triangles, and squares that were used to pay for each tier. The tiers were based on max level for each upgrade, so lines were used to pay for upgrade levels 1-5, digons for upgrade levels 6-10, and so on. That means that every building had 3 upgrades with 4 tiers each with 5 levels in each tier all gated by unlocks. That was complicated to type out and more difficult to tune and make it feel fun.
+
+## Simplify
+
+Gotta remember the goal, make games. Not the perfect game (yet), I want to get some reps in first before tackling a BIG game project. For the first game, I need it to be simple. That way I can get it out the door, lol.
+
+I took some inspiration from [Santaception](https://www.santaception.com/). That game (at least in the beginning) has different producers that all create the same resource. Elves, conveyors, etc that create gifts. And that is what I'm mimicking in The Lines game, except without all the clicking. Lines will have none.
+
+And now it's down to 2 resources: lines and papers. Lines are the "in run" resource that you buy upgrades with and papers are the prestige currency that you can use to buy upgrades that persist across prestiges. This model is much easier for me to play test and tune.
+
+Now I have a much more simple game that I can build on top of. The plan going forward is to get the prestige upgrades in and have them feel different from the in run upgrades.

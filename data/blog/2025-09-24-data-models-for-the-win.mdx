@@ -1,0 +1,27 @@
+---
+title: 'Data Models for the Win'
+date: '2025-09-24'
+tags: ['gamedev', 'thelinesgame']
+---
+
+![Lines game screenshot](/static/images/blog/data-models-for-the-win/screenshot-1.png)
+
+In the last one, I talked about doing another pivot to making games and a bit about how I'm setting my own expectations. For this time:
+
+Let's chat about the game!
+
+It's called: "Lines: the prototype". The general idea is that you will have buildings that generate resources (lines, digons, etc) then you can either use those resources to upgrade your buildings or sell them for currency. The currency you can use to buy "unlocks" which will unlock different mechanics, buildings, etc. This is the base of the game and I'll implement some more mechanics later on. Prestiges will definitely make an appearance, though I'm not sure in what form. I've thought about "workers", more resources, more currencies, building limits and a bunch of others. This is also supposed to be a small game, so I'm trying to keep it that way 😅
+
+To implement all of those game mechanics, I'm using React.js. There are some great open source examples of incremental/idle games built in html/javascript. Like the [Progress Knight source code](https://github.com/ihtasham42/progress-knight) and the [Cavern Crawler source code](https://github.com/oreiboon/cavern_crawler). I was able to get inspiration from those on implementing some of the different data structures. And [this article](https://gist.github.com/HipHopHuman/3e9b4a94b30ac9387d9a99ef2d29eb1a) on implementing a game loop was super helpful too.
+
+Up until recently I just had all of the code in one TypeScript file. Data, logic, ui code all in the same place. As the file approached 1000 lines and while the game worked, the code started to become a bit unwieldy. It was hard to reason what code was doing what. I had logic mixed with UI code mixed with data.
+
+During a chat with one of my friends, he suggested that I create "models" for the different entities in the game. And the more we talked about it, the more I realized they were right. With models I'd be able to separate all the concerns of logic, data, and UI So that's what I did! Buildings, Upgrades, Resources, Currencies, Unlocks all got their own data file and their own model file.
+
+![Code structure screenshot](/static/images/blog/data-models-for-the-win/screenshot-2.png)
+
+This meant that all of the logic to calculate a resource per tick (how much you generate each game update) went into that model file. And the buildings can get all of the applicable upgrades and then apply those. The really nice thing about using TypeScript here is that I can use the same interface to implement the data structure and to implement the model class. That ensures the data and model stay in sync.
+
+![TypeScript interface screenshot](/static/images/blog/data-models-for-the-win/screenshot-3.png)
+
+With the models in place, I feel like I'm able to now add more content, gate that content, and then play test to see if it's fun or not. Of course, as I've been doing that, I now see that the UI isn't quite right in how it displays things. And the upgrades for buildings should be more clear... And you should be able to buy multiples of things.... That's a story for another time though 😁
