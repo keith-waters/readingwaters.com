@@ -2,7 +2,7 @@ export async function POST(req: Request) {
   const { email } = await req.json()
   const data = {
     email,
-    groups: ['110017345201636525'],
+    groups: ['181480537276286589'],
   }
 
   try {
